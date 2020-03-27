@@ -15,8 +15,7 @@ Author Affiliations:
 
 # Code Summary:
 Code for model, figures and statistics written for this project include the following:
-* ml-RECIST: TensorFlow-based fully connected natural language processing neural network 
-- implementation details are found in the manuscript
+* ml-RECIST: TensorFlow-based fully connected natural language processing neural network (implementation details found in the manuscript)
 * Receiver operator characteristic (ROC) with area under the curve (AUC) estimates
 * Survival curves using Kaplan-Meier estimates
 * Waterfall plot
