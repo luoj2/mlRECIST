@@ -13,7 +13,7 @@ Author Affiliations:
 5 Department of Medicine, Massachusetts General Hospital, Boston, MA
 6 Department of Radiology, Massachusetts General Hospital, Boston, MA
 
-# Summary:
+# Code Summary:
 Code for model, figures and statistics written for this project include the following:
 * ml-RECIST: TensorFlow-based fully connected natural language processing neural network 
 - implementation details are found in the manuscript
@@ -22,6 +22,8 @@ Code for model, figures and statistics written for this project include the foll
 * Waterfall plot
 * Scatter plot
 * Vertical stacked bar plot
+
+# Data Summary:
 Data includes the following:
 * Reduced dataset of output from ml-RECIST for the training, internal validation and external validation sets
 
