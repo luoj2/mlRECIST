@@ -28,9 +28,12 @@ Data includes the following:
 
 # Installation:
 The scripts are dependent on the following packages:
+* TensorFlow 1.15
+* Gensim
 * NumPy
 * Matplotlib
 * Pandas
 * Scikit-learn
+* Glove's embeddings glove.840B.300d
 
 Please contact the corresponding authors for any questions or comments regarding the paper.
