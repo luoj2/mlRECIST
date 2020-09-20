@@ -65,7 +65,7 @@ The data used (including input, ground truth, and accompanying information) was 
 * Date of scan [MM/DD/YYYY]
 * Type of scan (CT, PET, MR)
 * Scan type specified (CT CH/ABD/PEL W/ CON, etc.)
-* Scan report text (the entirety of the text report from "FINDINGS:" through "FINAL REPORT")
+* Scan report text (the entirety of the text report)
 
 Ultimately, the input for the algorithm is column:
 * Scan report text
