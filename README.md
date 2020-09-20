@@ -52,7 +52,7 @@ The scripts are dependent on the following packages:
 # Usage:
 
 ### Data format: 
-The data used for the model (input, ground truth, accompanying information) was formatted as an Excel file with columns in the following order:
+The data used (including input, ground truth, and accompanying information) was formatted as an Excel file with these columns in this exact order:
 * Patient ID, anonymized 
 * Treatment start date [MM/DD/YYYY]
 * Treatment setting (clinical trial, standard of care)
@@ -67,15 +67,15 @@ The data used for the model (input, ground truth, accompanying information) was 
 * Scan type specified (CT CH/ABD/PEL W/ CON, etc.)
 * Scan report text (the entirety of the text report with dates removed)
 
-The input for the model was the above column:
-* Scan report text (the entirety of the text report with dates removed)
+The input for the algorithm is column:
+* Scan report text
 
 The model estimates three RECIST outcomes of interest: 
 * best overall response (BOR)
 * progression (Y, N)
 * progression date (MM/DD/YYYY)
 
-Specifically these are the above columns:
+Specifically these are columns (ground truth):
 * Objective Response per RECIST
 * Date of radiologic progression-free survival
 * PFS censor
