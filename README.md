@@ -11,7 +11,7 @@
 
 mlRECIST is a machine learning classification algorithm (deep NLP) we developed that estimates RECIST outcomes from radiology text reports. This model is NOT intended to replicate RECIST or be used in clinical practice or trials but rather is a tool for analysis of retrospective data. 
 
-This repository contains our open-source Python code for the model, example of the output (reduced data), and select statistical/ plotting files. We are unable to share the input data because it is protected health information (PHI). Our manuscript in press in Cancer Discovery titled:
+This repository contains our open-source Python code for the model, example of the output (reduced data), and select statistical/ plotting files. We are unable to share the input data because it is protected health information (PHI). For details please see our manuscript:
 
 >Deep learning to estimate RECIST in patients with NSCLC treated with PD-1 blockade.
 >Authors: Kathryn C. Arbour1,2*, Luu Anh Tuan3*, Jia Luo1*, Hira Rizvi1, Andrew J. Plodkowski4, Mustafa Sakhi5, Kevin Huang5, Subba R. Digumarthy6, Michelle S. Ginsberg4, Jeffrey Girshman4, Mark G. Kris1,2, Gregory J. Riely1,2, Adam Yala3, Justin F. Gainor4^, Regina Barzilay3^, and Matthew D. Hellmann1,2^ [accepted, in press] Cancer Discovery 2020.
@@ -37,7 +37,7 @@ Code for model, figures and statistics written for this project include the foll
 
 # Data Summary:
 Data includes the following:
-* Reduced dataset of output from ml-RECIST for the training, internal validation and external validation sets
+* Reduced dataset of output from mlRECIST for the training, internal validation and external validation sets
 
 # Installation:
 The scripts are dependent on the following packages:
@@ -49,7 +49,7 @@ The scripts are dependent on the following packages:
 * Scikit-learn
 * Glove's embeddings glove.840B.300d
 
-Please contact the corresponding authors for any questions or comments regarding the paper.
+Please contact the corresponding authors Regina Barzilay or Matthew D. Hellmann for any questions or comments regarding the paper.
 
 # Usage:
 
@@ -75,7 +75,7 @@ The model makes three predictions: predicting best overall response (BOR), predi
 #### Predicting the BOR: 
 To predict the BOR, run the following command: (see the list of arguments below)
 
-  python ./model/src/test_predict_objective.py arguments(optional)
+    python ./model/src/test_predict_objective.py arguments(optional)
 
 The prediction file is in the folder: log_test/predict_objective
 
