@@ -62,7 +62,7 @@ The data input for the model is an Excel file with the columns in the following 
 * PFS censor (0, 1)
 * Scan timepoint (Baseline, ontx, progression)
 * Scan include? (Y, N)
-* Date of scan [DD/MM/YYYY]
+* Date of scan [MM/DD/YYYY]
 * Type of scan (CT, PET, MR)
 * Scan type specified (CT CH/ABD/PEL W/ CON, etc.)
 * Scan report text (the entirety of the text report with dates removed)
@@ -77,8 +77,8 @@ To predict BOR, run the following command: (see the list of arguments below)
 
 The prediction file is in the folder: log_test/predict_objective
 
-#### Predicting PFS(Y/N): 
-To predict PFS(Y/N), run the following command:
+#### Predicting progression (Y, N): 
+To predict progression (Y, N), run the following command:
 
     python ./model/src/test_predict_progression.py arguments(optional)
 
