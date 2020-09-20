@@ -9,7 +9,7 @@
   <img alt="PyPI - License" src="https://img.shields.io/pypi/l/dedalus">
 </p>
 
-mlRECIST is a machine learning classification algorithm (deep NLP) we developed that estimates RECIST outcomes from radiology text reports. This model is NOT intended to replicate RECIST or be used in clinical practice or trials but rather is a tool for analysis of retrospective data. 
+mlRECIST is a machine learning classification algorithm (deep natural language processing [NLP]) we developed that estimates Response Evaluation Criteria in Solid Tumors (RECIST) outcomes from radiology text reports. This model is NOT intended to replicate RECIST or be used in clinical practice or trials but rather is a tool for analysis of retrospective data. 
 
 This repository contains our open-source Python code for the model, example of the output (reduced data), and select statistical/ plotting files. We are unable to share the input data because it is protected health information (PHI). For details please see our manuscript:
 
@@ -27,8 +27,8 @@ Author Affiliations:
 6 Department of Radiology, Massachusetts General Hospital, Boston, MA
 
 # Code Summary:
-Code for model, figures and statistics written for this project include the following:
-* ml-RECIST: TensorFlow-based fully connected natural language processing neural network (implementation details found in the manuscript)
+Code for algorithm, figures and statistics written for this project include the following:
+* mlRECIST: TensorFlow-based fully connected natural language processing neural network (implementation details found in the manuscript)
 * Receiver operator characteristic (ROC) with area under the curve (AUC) estimates
 * Survival curves using Kaplan-Meier estimates
 * Waterfall plot
@@ -37,7 +37,7 @@ Code for model, figures and statistics written for this project include the foll
 
 # Data Summary:
 Data includes the following:
-* Reduced dataset of output from mlRECIST for the training, internal validation and external validation sets
+* Reduced dataset of output from mlRECIST for the training, internal validation, and external validation sets
 
 # Installation:
 The scripts are dependent on the following packages:
@@ -48,8 +48,6 @@ The scripts are dependent on the following packages:
 * Pandas
 * Scikit-learn
 * Glove's embeddings glove.840B.300d
-
-Please contact the corresponding authors Regina Barzilay or Matthew D. Hellmann for any questions or comments regarding the paper.
 
 # Usage:
 
@@ -72,20 +70,22 @@ The data input for the model is an Excel file with the columns in the following 
 ### Running code:
 The model makes three predictions: predicting best overall response (BOR), predicting progression (Y, N), and predicting the progression date (MM/DD/YYYY).
 
-#### Predicting the BOR: 
-To predict the BOR, run the following command: (see the list of arguments below)
+#### Predicting BOR: 
+To predict BOR, run the following command: (see the list of arguments below)
 
     python ./model/src/test_predict_objective.py arguments(optional)
 
 The prediction file is in the folder: log_test/predict_objective
 
-#### Predicting the PFS(Y/N): To predict the PFS(Y/N), run the following command:
+#### Predicting PFS(Y/N): 
+To predict PFS(Y/N), run the following command:
 
     python ./model/src/test_predict_progression.py arguments(optional)
 
 The prediction file is in the folder: log_test/predict_progression
 
-#### Predicting the Progression date: To predict the progression date, run the following command:
+#### Predicting progression date: 
+To predict the progression date, run the following command:
 
     python ./model/src/test_predict_date.py arguments(optional)
 
@@ -106,7 +106,9 @@ Parameters of models:
 * Batch size_ --batch_size value
 * Number of training  epochs: --num_epochs value
 
-The parameters can be tuned among: hidden dimension size (200, 300, 500), dropout (0.8, 0.9, 1.0), learning rate (0.001, 0.005, 0.01), batch_size (1, 2, 4, 8). 
+The parameters can be tuned among: hidden dimension size (200, 300, 500), dropout (0.8, 0.9, 1.0), learning rate (0.001, 0.005, 0.01), and batch_size (1, 2, 4, 8). 
 
-Authors: [Jia Luo (@luoj2)](https://github.com/luoj2/) and [Anh Tuan Luu (@tuanluu)](https://github.com/tuanluu)
+Please contact the corresponding authors Regina Barzilay or Matthew D. Hellmann for any questions or comments regarding the paper.
+
+Developers: [Jia Luo (@luoj2)](https://github.com/luoj2/) and [Anh Tuan Luu (@tuanluu)](https://github.com/tuanluu)
 
