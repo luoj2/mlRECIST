@@ -27,7 +27,7 @@ Author Affiliations:
 6 Department of Radiology, Massachusetts General Hospital, Boston, MA
 
 # Code Summary:
-Code for algorithm, figures and statistics written for this project include the following:
+Code for the algorithm, figures and statistics written for this project include the following:
 * mlRECIST: TensorFlow-based fully connected natural language processing neural network (implementation details found in the manuscript)
 * Receiver operator characteristic (ROC) with area under the curve (AUC) estimates
 * Survival curves using Kaplan-Meier estimates
@@ -37,7 +37,7 @@ Code for algorithm, figures and statistics written for this project include the 
 
 # Data Summary:
 Data includes the following:
-* Reduced dataset of output from mlRECIST for the training, internal validation, and external validation sets'
+* Reduced dataset of output from mlRECIST for the training, internal validation, and external validation sets
 
 # Installation:
 The scripts are dependent on the following packages:
@@ -52,7 +52,7 @@ The scripts are dependent on the following packages:
 # Usage:
 
 ### Data format: 
-The data input for the model is an Excel file with the columns in the following order:
+The data used for model is formatted as an Excel file with columns in the following order:
 * Patient ID, anonymized 
 * Treatment start date [MM/DD/YYYY]
 * Treatment setting (clinical trial, standard of care)
@@ -72,6 +72,11 @@ The model estimates three RECIST outcomes of interest:
 * best overall response (BOR)
 * progression (Y, N)
 * progression date (MM/DD/YYYY)
+
+Specifically these are the above columns:
+* Objective Response per RECIST
+* Date of radiologic progression-free survival
+* PFS censor
 
 #### Predicting BOR: 
 To predict BOR, run the following command: (see the list of arguments below)
