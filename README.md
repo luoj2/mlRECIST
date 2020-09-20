@@ -1,7 +1,7 @@
 # mlRECIST project
 
 <!-- Information badges -->
-<p align="center">
+<p align="left">
   <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/dedalus">
   <img alt="PyPI - License" src="https://img.shields.io/pypi/l/dedalus">
 </p>
