@@ -2,9 +2,6 @@
 
 <!-- Information badges -->
 <p align="center">
-    <a href="https://www.repostatus.org/#active">
-    <img alt="Repo status" src="https://www.repostatus.org/badges/latest/inactive.svg" />
-  </a>
   <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/dedalus">
   <img alt="PyPI - License" src="https://img.shields.io/pypi/l/dedalus">
 </p>
