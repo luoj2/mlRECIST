@@ -13,8 +13,8 @@ mlRECIST is a machine learning classification algorithm (deep natural language p
 
 This repository contains our open-source Python code for the model, example of the output (reduced data), and select statistical/ plotting files. We are unable to share the input data because it is protected health information (PHI). For details please see our manuscript:
 
->Deep learning to estimate RECIST in patients with NSCLC treated with PD-1 blockade.
->Authors: Kathryn C. Arbour1,2*, Luu Anh Tuan3*, Jia Luo1*, Hira Rizvi1, Andrew J. Plodkowski4, Mustafa Sakhi5, Kevin Huang5, Subba R. Digumarthy6, Michelle S. Ginsberg4, Jeffrey Girshman4, Mark G. Kris1,2, Gregory J. Riely1,2, Adam Yala3, Justin F. Gainor4^, Regina Barzilay3^, and Matthew D. Hellmann1,2^ <i>[accepted, in press] <b>Cancer Discovery</i></b> 2020.
+>Deep learning to estimate RECIST in patients with NSCLC treated with PD-1 blockade. 
+>Kathryn C. Arbour*<sup>1,2</sup>, Luu Anh Tuan*<sup>3</sup>, Jia Luo*<sup>1</sup>, Hira Rizvi<sup>1</sup>, Andrew J. Plodkowski<sup>4</sup>, Mustafa Sakhi<sup>5</sup>, Kevin Huang<sup>5</sup>, Subba R. Digumarthy<sup>6</sup>, Michelle S. Ginsberg<sup>4</sup>, Jeffrey Girshman<sup>4</sup>, Mark G. Kris<sup>1,2</sup>, Gregory J. Riely<sup>1,2</sup>, Adam Yala<sup>3</sup>, Justin F. Gainor^<sup>5</sup>, Regina Barzilay^<sup>3</sup>, and Matthew D. Hellmann^<sup>1,2</sup> <i>[accepted, in press] <b>Cancer Discovery</i></b> 2020.
 
 *Contributed equally, ^Contributed equally 
 
@@ -65,17 +65,17 @@ The data used (including input, ground truth, and accompanying information) was 
 * Date of scan [MM/DD/YYYY]
 * Type of scan (CT, PET, MR)
 * Scan type specified (CT CH/ABD/PEL W/ CON, etc.)
-* Scan report text (the entirety of the text report with dates removed)
+* Scan report text (the entirety of the text report from "FINDINGS:" through "FINAL REPORT")
 
-The input for the algorithm is column:
+Ultimately, the input for the algorithm is column:
 * Scan report text
 
 The model estimates three RECIST outcomes of interest: 
-* best overall response (BOR)
+* best overall response (BOR) (CR, PR, SD, POD)
 * progression (Y, N)
 * progression date (MM/DD/YYYY)
 
-Specifically these are columns (ground truth):
+Specifically these are the following columns that served as ground truth:
 * Objective Response per RECIST
 * Date of radiologic progression-free survival
 * PFS censor
@@ -103,7 +103,7 @@ To predict the progression date, run the following command:
 
 The prediction file is in the folder: log_test/predict_date
 
-#### List of arguments and their formats:
+#### List of arguments and their format:
 
 Path files:
 * Training data: --data_source path_to_training_data
