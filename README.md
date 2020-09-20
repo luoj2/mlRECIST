@@ -14,7 +14,7 @@ mlRECIST is a machine learning classification algorithm (deep natural language p
 This repository contains our open-source Python code for the model, example of the output (reduced data), and select statistical/ plotting files. We are unable to share the input data because it is protected health information (PHI). For details please see our manuscript:
 
 >Deep learning to estimate RECIST in patients with NSCLC treated with PD-1 blockade.
->Authors: Kathryn C. Arbour1,2*, Luu Anh Tuan3*, Jia Luo1*, Hira Rizvi1, Andrew J. Plodkowski4, Mustafa Sakhi5, Kevin Huang5, Subba R. Digumarthy6, Michelle S. Ginsberg4, Jeffrey Girshman4, Mark G. Kris1,2, Gregory J. Riely1,2, Adam Yala3, Justin F. Gainor4^, Regina Barzilay3^, and Matthew D. Hellmann1,2^ [accepted, in press] Cancer Discovery 2020.
+>Authors: Kathryn C. Arbour1,2*, Luu Anh Tuan3*, Jia Luo1*, Hira Rizvi1, Andrew J. Plodkowski4, Mustafa Sakhi5, Kevin Huang5, Subba R. Digumarthy6, Michelle S. Ginsberg4, Jeffrey Girshman4, Mark G. Kris1,2, Gregory J. Riely1,2, Adam Yala3, Justin F. Gainor4^, Regina Barzilay3^, and Matthew D. Hellmann1,2^ <i>[accepted, in press] <b>Cancer Discovery</i></b> 2020.
 
 *Contributed equally, ^Contributed equally 
 
@@ -37,7 +37,7 @@ Code for algorithm, figures and statistics written for this project include the 
 
 # Data Summary:
 Data includes the following:
-* Reduced dataset of output from mlRECIST for the training, internal validation, and external validation sets
+* Reduced dataset of output from mlRECIST for the training, internal validation, and external validation sets'
 
 # Installation:
 The scripts are dependent on the following packages:
@@ -68,7 +68,10 @@ The data input for the model is an Excel file with the columns in the following 
 * Scan report text (the entirety of the text report with dates removed)
 
 ### Running code:
-The model makes three predictions: predicting best overall response (BOR), predicting progression (Y, N), and predicting the progression date (MM/DD/YYYY).
+The model estimates three RECIST outcomes of interest: 
+* best overall response (BOR)
+* progression (Y, N)
+* progression date (MM/DD/YYYY)
 
 #### Predicting BOR: 
 To predict BOR, run the following command: (see the list of arguments below)
