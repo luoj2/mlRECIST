@@ -57,7 +57,7 @@ The data used for the model (input, ground truth, accompanying information) was 
 * Treatment start date [MM/DD/YYYY]
 * Treatment setting (clinical trial, standard of care)
 * Outside Scans	(Y, N)
-* Objective Response per RECIST (CR, PR, SD, POD))
+* Objective Response per RECIST (CR, PR, SD, POD)
 * Date of radiologic progression-free survival [MM/DD/YYYY]
 * PFS censor (0, 1)
 * Scan timepoint (Baseline, ontx, progression)
