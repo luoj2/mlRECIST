@@ -53,16 +53,16 @@ The scripts are dependent on the following packages:
 
 ### Data format: 
 The data used (including input, ground truth, and accompanying information) was formatted as an Excel file with these columns in this exact order:
-* Patient ID, anonymized 
-* Treatment start date [MM/DD/YYYY]
+* Patient ID, anonymized
+* Treatment start date (MM/DD/YYYY)
 * Treatment setting (clinical trial, standard of care)
-* Outside Scans	(Y, N)
+* Outside Scans (Y, N) (defined as: scan report from outside of institution)
 * Objective Response per RECIST (CR, PR, SD, POD)
-* Date of radiologic progression-free survival [MM/DD/YYYY]
+* Date of radiologic progression-free survival (MM/DD/YYYY)
 * PFS censor (0, 1)
-* Scan timepoint (Baseline, ontx, progression)
-* Scan include? (Y, N)
-* Date of scan [MM/DD/YYYY]
+* Scan timepoint (Baseline, ontx, progression) (ontx = on treatment, during treatment or prior to progression if stopped treatment)
+* Scan include? (Y, N) (defined as: was the scan included in RECIST read?) 
+* Date of scan (MM/DD/YYYY)
 * Type of scan (CT, PET, MR)
 * Scan type specified (CT CH/ABD/PEL W/ CON, etc.)
 * Scan report text (the entirety of the text report)
@@ -75,7 +75,7 @@ The model estimates three RECIST outcomes of interest:
 * progression (Y, N)
 * progression date (MM/DD/YYYY)
 
-Specifically these are the following columns that served as ground truth:
+Specifically the following columns served as ground truth:
 * Objective Response per RECIST
 * Date of radiologic progression-free survival
 * PFS censor
