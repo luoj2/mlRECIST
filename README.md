@@ -52,7 +52,7 @@ The scripts are dependent on the following packages:
 # Usage:
 
 ### Data format: 
-The data used for model is formatted as an Excel file with columns in the following order:
+The data used for the model (input, ground truth, accompanying information) was formatted as an Excel file with columns in the following order:
 * Patient ID, anonymized 
 * Treatment start date [MM/DD/YYYY]
 * Treatment setting (clinical trial, standard of care)
@@ -67,7 +67,9 @@ The data used for model is formatted as an Excel file with columns in the follow
 * Scan type specified (CT CH/ABD/PEL W/ CON, etc.)
 * Scan report text (the entirety of the text report with dates removed)
 
-### Running code:
+The input for the model was the above column:
+* Scan report text (the entirety of the text report with dates removed)
+
 The model estimates three RECIST outcomes of interest: 
 * best overall response (BOR)
 * progression (Y, N)
@@ -77,6 +79,8 @@ Specifically these are the above columns:
 * Objective Response per RECIST
 * Date of radiologic progression-free survival
 * PFS censor
+
+### Running code:
 
 #### Predicting BOR: 
 To predict BOR, run the following command: (see the list of arguments below)
@@ -118,5 +122,5 @@ The parameters can be tuned among: hidden dimension size (200, 300, 500), dropou
 
 Please contact the corresponding authors Regina Barzilay or Matthew D. Hellmann for any questions or comments regarding the paper.
 
-Developers: [Jia Luo (@luoj2)](https://github.com/luoj2/) and [Anh Tuan Luu (@tuanluu)](https://github.com/tuanluu)
+Authors: [Jia Luo (@luoj2)](https://github.com/luoj2/) and [Anh Tuan Luu (@tuanluu)](https://github.com/tuanluu)
 
