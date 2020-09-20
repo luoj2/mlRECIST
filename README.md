@@ -52,7 +52,7 @@ The scripts are dependent on the following packages:
 # Usage:
 
 ### Data format: 
-The data used (including input, ground truth, and accompanying information) was formatted as an Excel file with these columns in this exact order:
+The data used (including input, ground truth, and accompanying information) was formatted as an Excel file (.xlsx) with these columns in this exact order:
 * Patient ID, anonymized
 * Treatment start date (MM/DD/YYYY)
 * Treatment setting (clinical trial, standard of care)
