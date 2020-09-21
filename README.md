@@ -53,7 +53,6 @@ The data used (including input, ground truth, and accompanying information) was 
 * Patient ID, anonymized
 * Treatment start date (MM/DD/YYYY)
 * Treatment setting (clinical trial, standard of care)
-* Outside Scans (Y, N) (defined as: scan report from outside of institution)
 * Objective Response per RECIST (CR, PR, SD, POD)
 * Date of radiologic progression-free survival (MM/DD/YYYY)
 * PFS censor (0, 1)
