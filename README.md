@@ -10,8 +10,8 @@ mlRECIST is a machine learning classification algorithm (deep natural language p
 
 This repository contains our open-source Python code for the model, example of the output (reduced data), and select statistical/ plotting files. We are unable to share the input data because it is protected health information (PHI). For details please see our manuscript:
 
->Deep learning to estimate RECIST in patients with NSCLC treated with PD-1 blockade. 
->Kathryn C. Arbour*<sup>1,2</sup>, Luu Anh Tuan*<sup>3</sup>, Jia Luo*<sup>1</sup>, Hira Rizvi<sup>1</sup>, Andrew J. Plodkowski<sup>4</sup>, Mustafa Sakhi<sup>5</sup>, Kevin Huang<sup>5</sup>, Subba R. Digumarthy<sup>6</sup>, Michelle S. Ginsberg<sup>4</sup>, Jeffrey Girshman<sup>4</sup>, Mark G. Kris<sup>1,2</sup>, Gregory J. Riely<sup>1,2</sup>, Adam Yala<sup>3</sup>, Justin F. Gainor^<sup>5</sup>, Regina Barzilay^<sup>3</sup>, and Matthew D. Hellmann^<sup>1,2</sup> <i>[accepted, in press] <b>Cancer Discovery</i></b> 2020.
+>[**Deep learning to estimate RECIST in patients with NSCLC treated with PD-1 blockade**](https://cancerdiscovery.aacrjournals.org/content/early/2020/09/19/2159-8290.CD-20-0419)<br/> 
+>Kathryn C. Arbour*<sup>1,2</sup>, Luu Anh Tuan*<sup>3</sup>, Jia Luo*<sup>1</sup>, Hira Rizvi<sup>1</sup>, Andrew J. Plodkowski<sup>4</sup>, Mustafa Sakhi<sup>5</sup>, Kevin Huang<sup>5</sup>, Subba R. Digumarthy<sup>6</sup>, Michelle S. Ginsberg<sup>4</sup>, Jeffrey Girshman<sup>4</sup>, Mark G. Kris<sup>1,2</sup>, Gregory J. Riely<sup>1,2</sup>, Adam Yala<sup>3</sup>, Justin F. Gainor^<sup>5</sup>, Regina Barzilay^<sup>3</sup>, and Matthew D. Hellmann^<sup>1,2</sup> <i>[accepted, in press] <b>Cancer Discovery</i></b> 2020. https://doi.org/10.1158/2159-8290.CD-20-0419
 
 *Contributed equally, ^Contributed equally 
 
